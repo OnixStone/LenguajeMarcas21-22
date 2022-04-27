@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            border:2px solid crimson;
+        }
+        h3{
+            background-color: cadetblue;
+            color: whitesmoke;
+            
+            text-align: center;
+        }
+        p{
+            background-color: rgb(40, 67, 119);
+            color:white;
+            padding:0.5rem;
+        }
+        a{
+            border:2px solid goldenrod;
+            padding-left:0.5em;
+            padding-top:0.5rem;
+            padding-right:0.5rem;
+        }
+
+        p a{
+            color:greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- Las cajas de bloque ocupan todo el ancho disponible
+    y pueden contener otros elementos de bloque o de línea. -->
+    <!-- Por ejemplo la etiqueta <div> suele utilizarse para contener otras etiquetas
+        y crear bloques de elementos html -->
+        <div>
+            <h3>Esto lleva un css para que se vean mejor las cajas</h3>
+            <p>Parrafo contenido en un div</p>
+            <a href="#"> Caja de linea 1</a>
+            <a href="#"> Caja de linea 2</a>
+            <p>Parrafo con un enlace dentro <a href="#">Enlace </a></p>
+        </div>
+</body>
+<script>
+    var titulo3 = document.querySelector("h3");
+    titulo3.innerText ="Hola Amigos";
+</script>
+</html>

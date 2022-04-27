@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        figure{
+            border:8px outset coral;
+            width: 300px;
+            padding:1em;
+        }
+        figcaption,h3{
+            color:cornflowerblue;
+            font-weight:300;
+            font-size:1.5em;
+        }
+        p{
+            font-size:1.8rem;
+            color:orangered;
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <img src="../imagenes/bear.jpg" alt="oso" width="300px" height="300px">
+        <figcaption> Pie de foto. Oso salvaje</figcaption>
+    </figure>
+    <h3> A continuación imágenes sin &lt;figure&gt</h3>
+    <img src="../imagenes/elephants.jpg" alt="oso" width="200px" height="200px">
+    <img src="../imagenes/monkey.jpg" alt="oso" width="200px" height="200px">
+
+    <h3>Ejemplo de &lt;picture&gt;</h3>
+    <p>Al ir redimensionando la página cambia la imagen que se muestra</p>
+    <picture>
+            <source media="(min-width: 900px)" srcset="../imagenes/bearMediano.jpg">
+            <source media="(min-width: 560px)" srcset="../imagenes/bearpequeno.jpg">
+            <img src="../imagenes/bearMoipequeno.jpg" alt="Flowers" style="width:auto;">
+        </picture>
+</body>
+</html>
