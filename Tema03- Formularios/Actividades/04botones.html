@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+         <!-- Cajas de texto -->
+         Nombre <br>
+         <input type="text" name="nombre"> <br>
+         Edad <br>
+         <input type="number" min="18" max="99" name="edad"> <br>
+         Password <br>
+         <input type="password" name="pass"><br>
+         
+        <input type="checkbox" name="programacion" value="programacion"> Programacion<br>
+        <input type="checkbox" name="basesDatos" value="bbdd"> Bases de datos<br>
+        <input type="checkbox" name="entornos" value="entornos"> Entornos de desarrollo<br>
+        <!-- Botón para envío de form -->
+        <input type="submit" value="Enviar" name="btnEj1">
+        <!-- Botón para resetear el form -->
+        <input type="reset" value="Resetear">
+        <!-- Botón sin acción predefinida -->
+        <input type="submit" value="Abrir alert" onclick="alert('No hago nada');">
+        <button type="button" onclick="this.style.border='10px solid red';"><i class="fas fa-hippo"></i></button>
+    </form>
+</body>
+</html>

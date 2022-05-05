@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* Estilos para ancho y centrado de página */
+        *{
+            box-sizing: border-box;
+        }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+            
+        }
+        .containerMainYAside{
+            overflow:hidden;
+        }
+
+        /* Estilos para el menú de la cabecera */
+        header {
+            padding: 1rem;
+            border: 3px solid #E34F26;
+        }
+
+        nav {
+            background-color: #E34F26;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        li a:hover {
+            background-color: #EF652A;
+        }
+
+        /* Fin estilos menú cabecera */
+        /* Estilos para situar el logo y el titulo alineados */
+        .contenedorLogo {
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            float: right;
+        }
+
+        /* Estilos para resaltar layout */
+        main,
+        section,
+        article,
+        footer,aside {
+            padding: 1rem;
+        }
+
+        main {
+            border: 3px solid cornflowerblue;
+            width:70%;
+            float: left;
+        }
+        aside{
+            width:30%;
+            float:left;
+            background-color: bisque;
+        }
+
+        section {
+            border: 3px solid rgb(228, 199, 34);
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            border: 3px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="contenedorLogo">
+                <img width="50px" src="../imagenes/html5Logo.png">
+                <h1>Titulo de la pagina</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Trabajo</a></li>
+                    <li><a href="#">Equipo</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="containerMainYAside">
+        <main>
+            <section>
+                <h3>Sección Trabajo</h3>
+                <article>
+                    <h4>Article sobre el trabajo</h4>
+                </article>
+                <article>
+                    <h4>Otra info sobre el trabajo</h4>
+                </article>
+            </section>
+
+            <section>
+                <h3>Equipo</h3>
+                <article>
+                    <h4>Información sobre el equipo</h4>
+                </article>
+            </section>
+        </main>
+        <aside>
+            <h3>Contenido Secundario</h3>
+        </aside>
+    </div>
+        <footer>
+            <h3>Contacto</h3>
+            <address>
+                Calle del Olvido 86,
+                www.ramonrs.com,
+            </address>
+        </footer>
+    </div>
+</body>
+
+</html>

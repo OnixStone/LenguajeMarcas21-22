@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+       <form method="GET" action="recogidaDatos.php" name="f1">
+    <!-- Cajas de texto -->
+        <p><label for="txtNombre">Nombre</label> </p>
+        <p><input type="text" name="nombre" id="txtNombre"> </p>
+        <p><label for="txtEdad">Edad</label> </p>
+        <p><input type="number" min="18" max="99" name="edad" id="txtEdad"> </p>
+        
+        <!-- Caja de texto multilinea -->
+        <p><label for="txtObservaciones">Observaciones</label></p>
+        <p><textarea id="txtObservaciones">
+
+        </textarea></p>
+        <!-- Botón para envío de form -->
+        <input type="submit" value="Enviar" name="btnEj1">
+    </form>
+</body>
+</html>

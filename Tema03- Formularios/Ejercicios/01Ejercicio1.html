@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Recogida de datos</h2>
+    <form method="POST" action="destino.php">
+        <fieldset>
+            <legend>Datos personales</legend>
+        <table>
+            <tr>
+                <td><label for="txtDni">DNI:</label></td>
+                <td><input type="text" id="txtForDni" required name="dni"></td>
+            </tr>
+            <tr>
+                <td><label for="txtNombre">Nombre:</label></td>
+                <td><input type="text" id="txtNombre" required name="nombre"></td>
+            </tr>
+            <tr>
+                <td><label for="txtApellido1">Primer Apellido:</label></td>
+                <td><input type="text" id="txtApellido1" required name="apellido1"> </td>
+            </tr>
+            <tr>
+                <td><label for="txtApellido2">Segundo Apellido:</label></td>
+                <td><input type="text" id="txtApellido2" required name="apellido2"></td>
+            </tr>
+            <tr>
+                    <td><label for="txtEmail">Correo electrónico:</label></td>
+                    <td><input type="text" id="txtEmail" required name="email"></td>
+            </tr>
+            <tr>
+                    <td><label for="txtFecha">Fecha nacimiento:</label></td>
+                    <td><input type="date" id="txtFecha" required name="fechaNac"></td>
+            </tr>
+        </table>
+   
+    </fieldset>
+    <fieldset>
+        <legend>Datos escolares</legend>
+        <table>
+            <tr>
+                <td><label for="txtCurso">Curso</label></td>
+                <td>
+                    <select>
+                        <option value="" selected disabled>Escoja un curso</option>
+                        <option value="eso3">3º ESO</option>
+                        <option value="eso4">4º ESO</option>
+                        <option value="bach1">1º Bachillerato</option>
+                        <option value="bach2">2º Bachillerato</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="txtCantidad">Cantidad </label></td>
+                <td><input type="text" name="cantidad" id="txtCantidad" required></td>
+            </tr>
+            <tr>
+                <td><label for="txtNota">Nota media (0 - 10) </label></td>
+                <td><input required type="number" name="notaMedia" id="txtNota" required></td>
+                
+            </tr>
+            <tr>
+                <td> <label for="txtBoletin">Boletin notas</label>
+                    
+                </td>
+                <td><input type="file" name="boletin" id="txtBoletin" accept=".pdf"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Datos económicos</legend>
+        <table>
+            <tr>
+                <td>Recibe otras ayudas?</td>
+                <td>
+                    <input type="radio" name="ayudas" value="si"><label>Si</label>
+                    <input type="radio" name="ayudas" value="no"><label>No</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="txtCuenta">Número cuenta</label></td>
+                <td>
+                <input type="text" maxlength="24" required name="cuenta" id="txtCuenta"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Enviar">
+               <input type="reset" value="borrar"></td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+</body>
+</html>
