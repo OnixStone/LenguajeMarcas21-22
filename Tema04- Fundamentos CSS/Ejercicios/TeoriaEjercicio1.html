@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table,td,th{
+            border:1px solid salmon;
+            border-collapse: collapse;
+        }
+        td,th{
+            padding:.5em .8em;
+        }
+        td span{
+            font-size: 1.1rem;
+            color:crimson;
+        }
+
+        span.resaltado{
+            color:cornflowerblue;
+            font-size : 1.05rem;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Definicion</th>
+            </tr>
+        </thead>
+        <tr>
+            <td><span>section.tecno article
+                </span></td>
+            <td>
+                <b><i>"Elementos <span class="resaltado">article</span> que sean <span class="resaltado">descendientes</span> de elementos <span class="resaltado">section</span> cuyo atributo <span class="resaltado">class</span>
+                    almacene el valor tecno"
+                </i></b>
+            </td>
+        </tr>
+        <tr>
+            <td><span>section.tecno article > h3</span></td>
+            <td><b><i>"Elemento <span class="resaltado">h3</span> que sean <span class="resaltado">hijos</span> de elementos <span class="resaltado">article</span> que sean <span class="resaltado">descendientes</span> de elementos <span class="resaltado">section</span> cuyo atributo <span class="resaltado">class</span>
+                almacene el valor tecno"</i></b></td>
+        </tr>
+        <tr>
+            <td><span>h1 + h2</span></td>
+            <td><b><i>Elementos <span class="resaltado">h2</span> que sean <span class="resaltado">hermanos</span> de elementos <span class="resaltado">h1</span></i></b></td>
+        </tr>
+        <tr>
+            <td><span>*</span></td>
+            <td><b><i>Selector universal: Apunta a <span class="resaltado">todos</span> los elementos html</i></b></td>
+        </tr>
+        <tr>
+            <td><span>input[type=”text”].form-control</span></td>
+            <td><b><i>Elementos <span class="resaltado">input</span> cuyo atributo <span class="resaltado">type</span> almacena el valor <span class="resaltado">text</span> y cuyo atributo <span class="resaltado">class</span> almacena
+            el valor form-control</i></b></td>
+        </tr>
+    </table>
+</body>
+</html>

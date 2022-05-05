@@ -1,0 +1,30 @@
+
+        nav{
+            background-color: black;
+        }
+        nav ul{
+            padding-left: 0px;
+        }
+        nav ul li{
+            display: inline-block;
+            padding:1rem 0.5rem;
+            }
+
+        nav ul li.primero{
+            background-color:#4CAF50;
+        }
+        nav ul li.otros:hover{
+            background-color: #ddd;
+            
+        }
+        nav ul li.otros:hover a{
+            color:black;
+        }
+        nav ul li a{
+            color:white;
+            text-decoration: none;
+            font-size:1.2rem;
+            display: block;
+                       
+        }
+    

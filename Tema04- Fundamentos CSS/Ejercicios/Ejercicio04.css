@@ -1,0 +1,40 @@
+header ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+header ul li{
+    width: 30%;
+    border: 1px solid gray;
+    padding: 0.8em;
+    background-color: #414144;
+    
+}
+
+/* Estilos primer li */
+header ul li:first-child{
+    background-color: #779D00;
+}
+
+header ul li:first-child a{
+    color: #5D6006;
+}
+
+header ul li:first-child:hover a{
+    color: white;
+}
+
+/* Fin estilos primer li */
+
+/* El siguiente selector apunta a los li que no sean primer hijo ,
+es decir al resto. Esto se podría haber hecho igualmente asignándoles una clase */
+header ul li:not(:first-child){
+    background-image: url("imagenes/boletin4/flecha.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 90% center;
+}
+header ul li a{
+    color: white;
+    text-decoration:none;
+    display: block;
+}

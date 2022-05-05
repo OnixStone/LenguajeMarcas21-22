@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* menu 1 */
+        #menu1 {
+            padding: 1em;
+            margin-bottom: 1rem;
+        }
+
+        #menu1 a {
+
+            text-decoration: none;
+            background-color: #007BFF;
+            padding: .7em;
+            border-radius: 3px;
+            color: white;
+            width: 20%;
+            /* Esta regla no le afecta porque son elementos de linea*/
+        }
+
+        #menu2,
+        #menu3 {
+            /* Le damos un acho pequeño para forzar a que los enlaces
+            se muestren en vertical y demostrar que las propiedades margin top y 
+            margin-bottom no les afectan */
+            width: 150px;
+            margin-bottom: 2rem;
+        }
+
+        #menu2 a,
+        #menu3 a {
+            font-size: 1.2em;
+            text-decoration: none;
+            background-color: #28a745;
+            padding: .7em;
+            border-radius: 0.25rem;
+            color: white;
+            margin-top: 20px;
+            /*Esta regla no le afecta*/
+
+        }
+
+        /* Convertimos los enlaces del menu3 en elementos de bloque */
+        #menu3 a {
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu1">
+        <a href="#">Enlace 1</a>
+        <a href="#">Enlace 2</a>
+        <a href="#">Enlace 3</a>
+        <a href="#">Enlace 4</a>
+    </div>
+
+    <div id="menu2">
+        <a href="#">Enlace 1</a>
+        <a href="#">Enlace 2</a>
+        <a href="#">Enlace 3</a>
+        <a href="#">Enlace 4</a>
+    </div>
+
+    <div id="menu3">
+        <a href="#">Enlace 1</a>
+        <a href="#">Enlace 2</a>
+        <a href="#">Enlace 3</a>
+        <a href="#">Enlace 4</a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html{
+            font-size:18px;
+        }
+
+        .container{
+            font-size:25px;
+            line-height: 1.5;
+        }
+
+        .container p.raiz{
+            font-size:2rem;
+        }
+        .container p{
+            font-size:2em;
+        }
+        #respuesta{            
+            font-weight: bold;
+            font-size:1.4rem;
+            padding:2rem;
+            height:400px;
+            border:2px solid cadetblue;
+        }
+
+        .btn{
+            border:1px solid cornflowerblue;
+            color:white;
+            font-weight: bold;
+            padding:.6em .9em;
+            border-radius: 5px;
+            background-color: cornflowerblue;
+        }
+        .btn:hover{
+            cursor:pointer;
+            background-color: rgb(11, 56, 141);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="raiz">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A provident iste possimus illo? Laudantium cum officia eligendi ullam consequuntur nam sint voluptas eaque, tenetur cumque inventore quod! Vitae, deserunt. Nulla!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, quaerat adipisci! Omnis accusamus ad sed expedita autem repudiandae ex molestias sapiente. Dicta aspernatur esse laudantium omnis distinctio pariatur tempore cumque?</p>
+    </div>
+   
+    <input type="button" class="btn" id="btnRespuesta1" value="Respuesta a)">
+    <input type="button" class="btn" id="btnRespuesta2" value="Respuesta b)">
+    <div id="respuesta">
+            <h2>Respuesta</h2>
+        </div>
+</body>
+<script>
+    var contadorA=0;
+    var contadorB=0;
+    document.getElementById("btnRespuesta1").onclick=function(){
+        if(contadorA==0){
+        this.value="Ocultar";
+        contadorA+=1;
+        document.getElementById("respuesta").innerHTML = "<p class='respuesta'> El párrafo cuya clase es raiz tendrá un font-size de 36 px ya que se expresa en unidades rem</p>";
+        document.getElementById("respuesta").innerHTML+="<p class='respuesta'>El otro párrafo tendrá un font-size de 50px ya que 2em hace referencia al font-size heredado , y como en el container se establece un font-size de 25px , este es el valor que toma como referencia</p>"
+       
+        }
+        else{
+            contadorA=0;
+            this.value="Respuesta a)";
+            document.getElementById("respuesta").innerHTML="";
+        }
+    }
+
+        document.getElementById("btnRespuesta2").onclick=function(){
+        if(contadorB==0){
+        this.value="Ocultar";
+        contadorB+=1;
+        document.getElementById("respuesta").innerHTML = "<p class='respuesta'> El interlineado como se ha expresado en el container sin unidades permite que para cada párrafo el interlineado se calcule con respecto a su font-size. Por lo que el párrafo con clase raiz tendrá un interlineado de un 50% más de su font-size , esto es 36px + 18px = 54px. Mientras que el segundo párrafo tendrá un interlineado de 50px + 25px = 75px</p>";
+        
+        document.getElementById("respuesta").style.borderBottom="3px solid cadetBlue";
+        }
+        else{
+            contadorB=0;
+            this.value="Respuesta b)";
+            document.getElementById("respuesta").innerHTML="";
+        }
+    }
+</script>
+</html>

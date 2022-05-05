@@ -1,0 +1,96 @@
+.container{
+    width: 80%;
+    margin:0 auto;
+    border: 2px solid saddlebrown;
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+table.tabla1{
+    border-collapse: collapse;
+    margin:0 auto;
+}
+
+table.tabla1 caption{
+    font-size: 2em;
+
+}
+table.tabla1 thead{
+    font-size: 1.1em;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(#00557f,#006699);
+}
+
+/* Estilos cabecer tabla */
+table.tabla1 thead th{
+    padding: 0.5em 2em;
+    background-size:30px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+}
+
+table.tabla1 thead tr th:first-child{
+    background-image: url("imagenes/boletin4/iconoCabeza.png");       
+    }
+    table.tabla1 thead tr th:nth-child(3){
+        background-image:url("imagenes/boletin4/iconoDireccion.png")
+    }
+    table.tabla1 thead tr th:nth-child(4){
+        background-image:url("imagenes/boletin4/iconoTlfn.png")
+    }
+
+
+/* Estilos cuerpo tabla */
+table.tabla1 tbody tr{
+    font-size: 0.9em;
+    text-align: left;
+
+}
+
+table.tabla1 tbody tr:nth-child(2n){
+    background:#E1EEf4;
+}
+
+table.tabla1 tbody tr td{
+    border-right:1px solid darkblue;
+    padding-left: 0.3em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+}
+
+table.tabla1 tbody tr td:last-child{
+    border-right: none;
+}
+
+table.tabla1 tbody tr:hover{
+    font-size:1.1em;
+    cursor: pointer;
+}
+
+/* Estilos pie de tabla */
+
+table.tabla1 tfoot {
+    background:#E1EEf4; 
+}
+
+table.tabla1 tfoot tr ul {
+    list-style-type: none;
+    padding-left: 0px;
+    text-align:right;
+    padding-right: 20px;
+}
+
+table.tabla1 tfoot tr ul li{
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-image: linear-gradient(#00557f,#006699);
+    border-radius: 10px;
+    
+}
+
+table.tabla1 tfoot tr ul li a{
+    color: white;
+    font-weight: bold;
+    text-decoration:none;
+}

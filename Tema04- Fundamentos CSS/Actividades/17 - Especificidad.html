@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* Selectores de menos específico a más específico */
+        html body header h1{  /*<-- 4 etiquetas*/
+            color: coral;  
+        }
+
+        body div.container h1{ /*<-- 3 etiquetas + 1 clase*/
+            color:chocolate;
+        }
+
+        .container .titulo{ /* <-- dos clases*/
+            color: crimson;
+        }
+        #tituloPagina{   /* <-- 1 id*/
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="tituloPagina" class="titulo"> Titulo de la página</h1>
+        </header>
+    </div>
+</body>
+</html>

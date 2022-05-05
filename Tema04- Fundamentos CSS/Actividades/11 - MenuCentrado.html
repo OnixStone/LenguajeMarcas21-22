@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+        <style>
+         
+            .container{
+                width:80%;
+                margin:0 auto;
+                border:3px solid cornflowerblue;
+            }
+         
+            header{
+                
+                padding:1em;
+                border: 2px solid salmon;
+            }
+
+             /* Estilos para el menu */
+            nav{
+                text-align: center;
+            }
+             nav ul{
+                 /* Quitamos puntos lista desordenada */
+                 list-style-type: none;
+                 /* Quitamos padding-left de las listas */
+                 padding-left: 0px;
+             }
+
+             nav ul li{
+                /* Ponemos elementos en horizontal */
+                display: inline-block;
+                width:20%;
+                
+             }
+
+             nav ul li a{
+                 display: block;
+                 color:white;
+                 font-size:1.3rem;
+                 text-decoration: none;
+                 padding:.7em;
+                 background-color: rgb(28, 95, 219);
+                 border-radius:.3em;
+                 margin:1em;
+             }
+
+             nav ul li a:hover{
+                text-transform: uppercase;
+             }
+
+        </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Trabajo</a></li>
+                    <li><a href="#">Equipo</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+</body>
+</html>

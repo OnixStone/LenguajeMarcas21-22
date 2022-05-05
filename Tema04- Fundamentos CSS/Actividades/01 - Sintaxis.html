@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Linkar fichero externo css -->
+    <link href="01 - CSSExterno.css" rel="stylesheet">
+    <title>01 - Sintaxis</title>
+    <style>
+        
+        p{
+            color:gray;
+            font-family: Helvetica;
+        }
+
+        div{
+            border:2px solid coral;
+            padding: 1em;
+        }
+
+        /* Selector de clase */
+        .coloreado{
+            color:cornflowerblue;
+        }
+        /* Selector de id */
+        #especial{
+            font-weight: bold;
+        }
+
+        /* Selector de clase combinado con selector de elemento */
+        p.coloreado{
+            color: cornflowerblue;
+            text-decoration: none;
+        }
+
+        /* Varios selectores para mismo bloque de declaraciones  */
+        h1,h2,h3,h4{
+            color:cornflowerblue;
+        }
+
+        /* Selector descendente */
+        div p{
+            font-style: italic;
+        }
+
+        .container p{
+            color: crimson;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo de la página</h1>
+    <p style="background-color: cornsilk;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit itaque enim error voluptatum consequuntur voluptates neque, iure est quo ab rerum deleniti doloribus non eius! Sequi aliquam repudiandae illo.</p>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum expedita perspiciatis iure alias. Eius quia voluptatum eaque eum. Est corrupti perferendis eum, provident neque atque deleniti officiis earum magnam eaque.</p>
+    </div>
+</body>
+</html>

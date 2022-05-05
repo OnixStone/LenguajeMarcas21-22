@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html{
+            font-size:18px;
+        }
+        h1{
+            text-align: center;
+            color: blue;
+        }
+        table{
+            width:80%;
+            margin:0 auto;
+        }
+    table,td,th{
+        border:1px solid lightsalmon;
+        border-collapse: collapse;
+        padding:.5em 1em;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    thead{
+        background-color: blue;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 3 de Teoría</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Especificidad</th>
+                <th>Ordenados de más específico a menos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>section article p span</td>
+                <td>(0,0,4)</td>
+                <td rowspan="5" style="text-align: left;">
+                    <ol>
+                        <li>#contenedor p.especial <b>(1,1,1)</b></li>
+                        <li>#contenedor p <b>(1,0,1)</b></li>
+                        <li>section p.resaltado span <b>(0,1,3)</b></li>
+                        <li>section article p span<b>(0,0,4)</b></li>
+                        <li>section article<b>(0,0,2)</b></li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>section p.resaltado span</td>
+                <td>(0,1,3)</td>
+            </tr>
+            <tr>
+                <td>section article</td>
+                <td>(0,0,2)</td>
+            </tr>
+            <tr>
+                <td>#contenedor p</td>
+                <td>(1,0,1)</td>
+            </tr>
+            <tr>
+                <td>#contenedor p.especial</td>
+                    
+                <td>(1,1,1)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
