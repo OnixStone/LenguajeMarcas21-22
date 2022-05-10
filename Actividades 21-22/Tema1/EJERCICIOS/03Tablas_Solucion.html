@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        table,
+        td,
+        th {
+            margin-right: 10px;
+            font-size: 1.2rem;
+            text-align: center;
+            border: 2px solid cadetblue;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 0.5rem;
+        }
+
+        caption {
+            font-size: 1.3rem;
+        }
+
+        .resaltado {
+            font-weight: bold;
+            color: orangered;
+            font-size: 1.7rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <caption style="width: 500px;">Plantillas NBA</caption>
+            <thead>
+                <tr>
+                    <th>Equipo</th>
+                    <th>Jugadores</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img width="170px" src="../imagenes/hornets.png">
+                    </td>
+                    <td>
+                        <ul>
+                            <li><a href="#">Kemba Walker</a></li>
+                            <li><a href="#">Tony Parker</a></li>
+                            <li><a href="#">Miles Bridges</a></li>
+                            <li><a href="#">Nicolas Batum</a></li>
+                            <li><a href="#">Frank Kaminski</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img width="170px" src="../imagenes/lakers.png"></td>
+                    <td>
+                        <ul>
+                            <li><a href="#">Lebron James</a></li>
+                            <li><a href="#">Lonzo Ball</a></li>
+                            <li><a href="#">Kyle Kuzma</a></li>
+                            <li><a href="#">Brandom Ingram</a></li>
+                            <li><a href="#">Rajon Rondom</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img width="170px" src="../imagenes/knicks.png"></td>
+                    <td>
+                        <ul>
+                            <li><a href="#">Dennis Smith</a></li>
+                            <li><a href="#">Kevin Knox</a></li>
+                            <li><a href="#">Frank Ntilikina</a></li>
+                            <li><a href="#">DeAndre Jordan</a></li>
+                            <li><a href="#">Allonzo Trier</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!-- *****************************2ª Tabla************************************ -->
+        <table>
+            <caption>Etiquetas html</caption>
+            <thead>
+                <tr>
+                    <th><img width="50px" src="../imagenes/html5Logo.png" alt="icono de html5"></th>
+                    <th>Etiqueta</th>
+                    <th>Definicion</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td><img width="50px" src="../imagenes/barco.jpg"></td>
+                    <td colspan="2">
+                        <p>Montecastelo </p>
+                    </td>
+
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td rowspan="4">H<br>T<br>M<br>L<br><span class="resaltado">5</span></td>
+                    <td>&lt;img&gt;</td>
+                    <td> Permite enlazar una imagen</td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>Para crear enlaces</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Para crear párrados</td>
+                </tr>
+                <tr>
+                    <td>&lt;h2&gt;</td>
+                    <td>Encabezado de segundo nivel</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>

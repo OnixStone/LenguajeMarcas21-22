@@ -1,0 +1,28 @@
+        .container {
+            display: flex;
+        }
+
+        table,
+        td,
+        th {
+            margin-right: 10px;
+            font-size: 1.2rem;
+            text-align: center;
+            border: 2px solid cadetblue;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 0.5rem;
+        }
+
+        caption {
+            font-size: 1.3rem;
+        }
+
+        .resaltado {
+            font-weight: bold;
+            color: orangered;
+            font-size: 1.7rem;
+        }
