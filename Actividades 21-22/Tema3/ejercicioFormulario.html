@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Formulario</title>
+</head>
+<body>
+    <h1>Recogida de datos</h1>
+    <form method="post" action="#">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+                <label for="txtDNI">DNI:</label>
+                <input type="text" id="txtDNI" name="txtDNI" required maxlength="9">
+            </p>
+            <p>
+                <label for="txtNombre">Nombre:</label>
+                <input type="text" id="txtNombre" name="txtNombre" required>
+            </p>
+            <p>
+                <label for="txtApellido">Primer apellido:</label>
+                <input type="text" id="txtApellido" name="txtApellido" required>
+            </p>
+            <p>
+                <label for="txtApellido2">Segundo apellido:</label>
+                <input type="text" id="txtApellido2" name="txtApellido2" required>
+            </p>
+            <p>
+                <label for="txtMail">E-Mail:</label>
+                <input type="email" id="txtMail" name="txtMail">
+            </p>
+            <p>
+                <label for="txtFechaNac">Fecha nacimiento:</label>
+                <input type="date" id="txtFechaNac" name="txtFechaNac" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Datos escolares</legend>
+            <p>
+                <label for="sltCurso">Curso:</label>
+                <select id="sltCurso" required>
+                    <option value="3eso">3º ESO</option>
+                    <option value="4eso">4º ESO</option>
+                    <option value="1bac">1º BAC</option>
+                    <option value="2bac">2º BAC</option>
+                </select>
+            </p>
+            <p>
+                <label for="txtCantidad">Cantidad:</label>
+                <input type="number" id="txtCantidad" name="txtCantidad" required max="1500">
+            </p>
+            <p>
+                <label for="txtNotaMedia">Nota media:</label>
+                <input type="number" id="txtNotaMedia" name="txtNotaMedia" required>
+            </p>
+            <p>
+                <label for="fileNotas">Boletín de notas:</label>
+                <input type="file" id="fileNotas" name="fileNotas" required accept=".pdf">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Datos económicos</legend>
+            <p>
+                <label for="rbAyudasSi">¿Recibe otras ayudas?:</label>
+                <input type="radio" id="rbAyudasSi" name="rbAyudas" value="Si" required checked>Sí
+                <input type="radio" id="rbAyudasNo" name="rbAyudas" value="No" required>No
+            </p>
+            <p>
+                <label for="txtNumeroCuenta">Número cuenta:</label>
+                <input type="text" id="txtNumeroCuenta" name="txtNumeroCuenta" required maxlength="24">
+            </p>
+            <p>
+                <input type="submit" id="btnEnviarFormulario" value="Enviar">
+                <input type="reset" id="btnResetFormulario" value="Reset">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
