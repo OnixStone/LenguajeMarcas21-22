@@ -1,0 +1,19 @@
+table
+{
+	font-family:sans-serif;
+	font-size:20px;
+	width:650px;
+	text-align:justify;
+	border: 1px double gray;
+}
+
+img
+{
+	float:left;
+}
+
+tr, td
+{
+	border: 1px double gray;
+	outline: 1px double gray;
+}

@@ -1,0 +1,12 @@
+body{
+	font-size: 20px;
+
+}
+
+.lineaTexto{
+	background-color: black;
+	color: yellow;
+	border: 1px solid red;
+	text-align: center;
+	display: block;
+}
