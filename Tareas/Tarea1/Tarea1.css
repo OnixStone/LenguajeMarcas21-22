@@ -1,0 +1,276 @@
+            /* Estilos para los enlaces del menú */
+            
+            ul#menu {
+                padding-left: 0px;
+                list-style-type: none;
+            }
+            
+            ul#menu li {
+                display: inline-block;
+                background-color: burlywood;
+            }
+            
+            ul#menu li a {
+                display: block;
+                padding: 0.5em;
+                font-weight: bold;
+                text-decoration: none;
+                color: white;
+            }
+            /* Estilos para los encabezados */
+            
+            h2,
+            h3,
+            h4 {
+                background-color: cornflowerblue;
+                color: white;
+                border-bottom: 4px solid coral;
+            }
+            /* Estilos para la tabla */
+            
+            caption {
+                font-size: 1.5em;
+                color: darkcyan;
+                /* letter-spacing: 0.5em; */
+            }
+            
+            table {
+                border: 1px solid green;
+                margin: 0 auto;
+                /*Centrar la tabla*/
+            }
+            
+            td,
+            th {
+                padding: 1em;
+                border: 1px solid burlywood;
+            }
+            
+            li {
+                line-height: 1.5;
+            }
+            /* Estilos para resaltar palabras */
+            
+            .favorito {
+                color: white;
+                font-weight: bold;
+                padding: 0.2em;
+                border: 1px solid blue;
+                background-color: cornflowerblue;
+                border-radius: 10px;
+            }
+            
+            .favorito:hover {
+                cursor: pointer;
+                font-size: 1.02rem;
+            }
+            /* Estilos para el enlace que sitúa el navegador en el menu principal */
+            
+            .subir {
+                position: fixed;
+                bottom: 10px;
+                right: 40px;
+                align-items: center;
+                text-decoration: none;
+                background-color: cornflowerblue;
+                color: white;
+                font-weight: bold;
+                padding: em;
+                border: 1px solid darkblue;
+                border-radius: 50%;
+                justify-content: center;
+                display: flex;
+                width: 70px;
+                height: 70px;
+            }
+            
+            html {
+                scroll-behavior: smooth;
+                font-size: 18px;
+            }
+            
+            header.principal {
+                background-color: #f44336;
+                color: white;
+                padding: 1em;
+            }
+            
+            header.principal nav {
+                text-align: center;
+            }
+            
+            header.principal h1 {
+                text-align: center;
+            }
+            
+            h2.h2principal {
+                text-align: center;
+                background-color: #161c91;
+                color: white;
+                padding: 1rem;
+            }
+            
+            header.principal ul {
+                list-style-type: none;
+                padding-left: 0px;
+                margin: 0 auto;
+                width: 80%;
+            }
+            
+            header.principal ul li {
+                display: inline-block;
+                font-size: 1.4rem;
+                width: 250px;
+                margin-right: 1rem;
+                border-bottom: 2px solid white;
+            }
+            
+            .topnav li:hover {
+                background-color: gray;
+            }
+            
+            header.principal ul li a {
+                color: white;
+                display: block;
+                text-decoration: none;
+            }
+            
+            article {
+                border: 2px solid cornflowerblue;
+                padding: 1em;
+                margin: 1rem 0px;
+            }
+            /* Estilos ejercicio 4 de la tarea */
+            
+            #ejercicio4Tarea ul {
+                padding: 0px;
+                background-color: #e9e9e9;
+            }
+            
+            #ejercicio4Tarea ul li {
+                display: inline-block;
+                padding: 16px 14px;
+            }
+            
+            #ejercicio4Tarea ul li:first-child {
+                background-color: #2196F3;
+            }
+            
+            #ejercicio4Tarea ul li:first-child a {
+                color: white;
+            }
+            
+            #ejercicio4Tarea ul li a {
+                color: black;
+                text-decoration: none;
+            }
+            
+            #ejercicio4Tarea input[type="text"] {
+                padding: .4em;
+                border: 1px solid gainsboro;
+                border-radius: 4px;
+            }
+            
+            #ejercicio4Tarea button {
+                padding: .4em;
+                border: 1px solid gainsboro;
+                border-radius: 4px;
+            }
+            /* Estilos ejercicio 5 de la tarea */
+            
+            #ejercicio5Tarea .container {
+                width: 60%;
+                padding: .8rem;
+                border: 2px solid salmon;
+                margin: 0 auto;
+            }
+            
+            #ejercicio5Tarea label {
+                font-size: 1.1rem;
+            }
+            
+            #ejercicio5Tarea input[type="text"],
+            input[type="email"],
+            input[type="number"],
+            select {
+                display: block;
+                padding: 8px;
+                font-size: 1.2rem;
+                color: gray;
+                margin: 12px 0px;
+                border: 2px solid gainsboro;
+                width: 100%;
+            }
+            
+            #ejercicio5Tarea input.cantidad {
+                width: 25%;
+            }
+            
+            #ejercicio5Tarea input[type="radio"] {
+                transform: scale(1.5);
+                background-color: cornflowerblue;
+            }
+            
+            #ejercicio5Tarea .containerRadio {
+                margin-bottom: 10px;
+            }
+            
+            #ejercicio5Tarea .btn {
+                padding: 15px 5px;
+                border: 1px solid gainsboro;
+                color: white;
+                font-size: 1.2rem;
+                width: 49%;
+            }
+            
+            #ejercicio5Tarea .enviar {
+                background-color: #2196F3;
+            }
+            
+            #ejercicio5Tarea .limpiar {
+                background-color: lightcoral;
+            }
+            /* Estilos ejercicio 6 de la tarea */
+            
+            #ejercicio6Tarea table {
+                border-collapse: collapse;
+                width: 80%;
+            }
+            
+            #ejercicio6Tarea thead {
+                border-bottom: 3px solid gray;
+            }
+            
+            #ejercicio6Tarea thead th {
+                text-align: left;
+                padding-top: 2px;
+                padding-bottom: 6px;
+            }
+            
+            #ejercicio6Tarea tr {
+                border-bottom: 1px solid gainsboro;
+            }
+            
+            #ejercicio6Tarea td {
+                padding: 9px;
+            }
+            
+            #ejercicio6Tarea tr.success {
+                background-color: lightblue;
+            }
+            
+            #ejercicio6Tarea tr.danger {
+                background-color: #F2DEDE;
+            }
+            
+            #ejercicio6Tarea tr.info {
+                background-color: #D9EDF7;
+            }
+            
+            #ejercicio6Tarea tr.warning {
+                background-color: #FCF8E3;
+            }
+            
+            #ejercicio6Tarea tr.active {
+                background-color: #F5F5F5;
+            }

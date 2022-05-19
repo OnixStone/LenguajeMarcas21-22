@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="Tarea1.css" type="text/css">
+    <title>Tarea 1</title>
+
+</head>
+
+<body>
+    <main>
+        <section id="tarea">
+            <h2>Ejercicios de la tarea</h2>
+
+            <article id="ejercicio1Tarea">
+                <h3>Ejercicio 1</h3>
+                <table>
+                    <caption>
+                        Super oferta Viaje a Nueva Zelanda
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2" colspan="2"></th>
+                            <th colspan="2"> Hoteles 3 estrellas</th>
+                            <th rowspan="2"> Hoteles 4 estrellas</th>
+                        </tr>
+                        <tr>
+                            <th>Solo alojamiento</th>
+                            <th>Pensión completa</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6">
+                                <center><small> Tabla creada por el profe</small> </center>
+                            </td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <!-- **************  Primera fila*************** -->
+                        <tr>
+                            <th rowspan="2">1 semana </th>
+                            <th>Avión turista</th>
+                            <td> 700 USD</td>
+                            <td>1000 USD</td>
+                            <td rowspan="2">1500 USD</td>
+                            <td rowspan="3">
+                                <p>H<br>T<br>M<br>L<br>&nbsp;is<br>&nbsp;&nbsp;awe<br>&nbsp;&nbsp;&nbsp;&nbsp;some</p>
+                            </td>
+                        </tr>
+                        <!-- ************** Fin de la primera fila ******************** -->
+                        <tr>
+                            <td>Avión preferente</td>
+                            <td>780 USD</td>
+                            <td>900 USD</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">2 semanas</td>
+                            <td> 890USD</td>
+                            <td>900 USD</td>
+                            <td> 1200 USD</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article id="ejercicio2Tarea">
+                <h3>Ejercicio 2</h3>
+                <table>
+                    <thead>
+                        <th>Mis 5 libros favoritos</th>
+                        <th>Mi álbum favorito</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ol>
+                                    <li>La conjura de los necios</li>
+                                    <li>El médico</li>
+                                    <li>El resplandor</li>
+                                    <li>Sinuhé el egipcio</li>
+                                    <li>Los pilares de la Tierra</li>
+                                </ol>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Keane <ul>
+                                            <li>Hopes And fears <ol>
+                                                    <li><span class="favorito">Somewhere</span> only we know</li>
+                                                    <li>Bend and break</li>
+                                                    <li>Everibody's <span class="favorito">changing</span></li>
+                                                    <li>This is the last time</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article id="ejercicio3Tarea">
+                <h3>Ejercicio 3</h3>
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="imagenes/bearMediano.jpg">
+                    <source media="(min-width: 768px)" srcset="imagenes/bearpequeno.jpg">
+                    <img src="imagenes/bearMoipequeno.jpg" alt="osos" style="width:auto;">
+                </picture>
+                <a class="subir" href="#menu">Subir</a>
+            </article>
+
+            <article id="ejercicio4Tarea">
+                <h3>Ejercicio 4</h3>
+                <div class="topnav">
+                    <ul>
+                        <li><a class="active" href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li> <a href="#contact">Contact</a></li>
+                        <li>
+                            <div class="search-container">
+                                <form>
+                                    <input type="text" placeholder="Search.." name="search">
+                                    <button type="submit"><i class="fas fa-search"></i></button>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <h3>Ejercicio 5</h3>
+                <h2>Solicitud ayudas al estudio</h2>
+                <h3>Curso 2021-22</h3>
+                <form id="ejercicio5Tarea" method="POST" action="#">
+                    <div class="container">
+                        <label for="txtDNI">DNI</label><input type="text" id="txtDNI" maxlength="9"
+                            placeholder="12345678Z">
+                        <label for="txtNombre">Nombre</label><input type="text" id="txtNombre" placeholder="Martin">
+                        <label for="txtApellidos">Apellidos</label><input type="text" id="txtApellidos"
+                            placeholder="Garcia">
+                        <label for="txtEmail">Email</label><input type="email" id="txtEmail"
+                            placeholder="martin@montecastelo.com">
+                        <select>
+                            <option selected disabled value="">Escoja un curso</option>
+                            <option value="1eso">1º ESO</option>
+                            <option value="2eso">2º ESO</option>
+                            <option value="3eso">3º ESO</option>
+                            <option value="4eso">4º ESO</option>
+                            <option value="1bach">1º BACH</option>
+                            <option value="2bach">2º BACH</option>
+                        </select>
+                        <label for="txtCantidad">Cantidad Solicitada</label><input class="cantidad" type="number"
+                            id="txtCantidad" placeholder="2000" max="2000">
+                        <div class="containerRadio">
+                            <label>Desea subscribirse a nuestra newsletter?</label>
+                            <input type="radio" name="subs" value="si"> Sí
+                            <input type="radio" name="subs" value="no">No
+                        </div>
+                        <input type="submit" class="btn enviar" value="Enviar">
+                        <input type="reset" class="btn limpiar" value="Limpiar">
+                    </div>
+                </form>
+            </article>
+            <article id="ejercicio6Tarea">
+                <h3>Ejercicio 6</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Default</td>
+                            <td>Defaultson</td>
+                            <td>def@somemail.com</td>
+                        </tr>
+                        <tr class="success">
+                            <td>Success</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                        </tr>
+                        <tr class="danger">
+                            <td>Danger</td>
+                            <td>Moe</td>
+                            <td>mary@example.com</td>
+                        </tr>
+                        <tr class="info">
+                            <td>Info</td>
+                            <td>Dooley</td>
+                            <td>july@example.com</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>Warning</td>
+                            <td>Refs</td>
+                            <td>bo@example.com</td>
+                        </tr>
+                        <tr class="active">
+                            <td>Active</td>
+                            <td>Activeson</td>
+                            <td>act@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
